@@ -1,0 +1,16 @@
+{% extends 'dashboard.html' %}
+
+{% block titulo %}
+Protocolo|Secado cafe
+{% endblock %}
+
+{% block content %}
+<h1>Protocolos</h1>
+<ul>
+    {% for protocolo in protocolos %}
+    <li>{{protocolo['name']}}</li>
+
+    {% endfor %}
+</ul>
+
+{% endblock %}
